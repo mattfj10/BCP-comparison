@@ -6,18 +6,23 @@ This project compares the **Morning Prayer office** of the **1662 Book of Common
 
 The texts are normalized into these logical units:
 
-1. Opening Sentences of Scripture
-2. Exhortation
-3. General Confession
-4. Absolution / Declaration of Absolution
-5. Opening Versicles and Lord's Prayer
-6. Invitatory Psalm (Venite)
-7. Psalter and Lessons
-8. Canticles after the Lessons
-9. Apostles' Creed
-10. Suffrages and Collects
-11. Anthem, Additional Prayers, and Sermon
-12. Closing Prayers and Grace
+1. Opening Rubrics
+2. Opening Sentences of Scripture
+3. Exhortation
+4. General Confession
+5. Absolution / Declaration of Absolution
+6. Opening Versicles and Lord’s Prayer Rubrics
+7. Opening Versicles and Lord’s Prayer Text
+8. Invitatory Psalm (Venite)
+9. Psalter and Lessons Rubrics
+10. Canticles after the Lessons
+11. Apostles’ Creed
+12. Suffrages and Collects Rubrics
+13. Suffrages and Collects Text
+14. Additional Prayers and Thanksgivings Rubrics
+15. Additional Prayers and Thanksgivings Text
+16. Closing Rubric
+17. Closing Grace Text
 
 The canonical comparison data is stored in `data/morning_prayer.json`, now populated with full text in each comparison unit rather than abbreviated excerpts.
 
