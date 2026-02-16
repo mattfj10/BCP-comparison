@@ -19,7 +19,7 @@ The texts are normalized into these logical units:
 11. Anthem, Additional Prayers, and Sermon
 12. Closing Prayers and Grace
 
-The canonical comparison data is stored in `data/morning_prayer.json`.
+The canonical comparison data is stored in `data/morning_prayer.json`, now populated with full text in each comparison unit rather than abbreviated excerpts.
 
 ## Run locally
 
