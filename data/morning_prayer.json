@@ -2,7 +2,7 @@
   "metadata": {
     "title": "Morning Prayer Comparison: 1662 BCP vs 1928 BCP",
     "notes": [
-      "Texts are organized so rubrics are in dedicated comparison units, separate from the prayer texts themselves; 1928 rubric/content entries were expanded for Morning Prayer completeness.",
+      "Texts are organized so rubrics are in dedicated comparison units, separate from the prayer texts themselves; 1928 rubric wording has been tightened to mirror prayer-book rubric style.",
       "Online retrieval was attempted in this environment, but direct access to common source hosts was blocked by proxy restrictions."
     ],
     "source_attempts": [
@@ -15,7 +15,7 @@
       "id": "opening-rubrics",
       "label": "Opening Rubrics",
       "text1662": "At the beginning of Morning Prayer the Minister shall read with a loud voice one or more of the Sentences of the Scriptures that follow.",
-      "text1928": "The Order for Daily Morning Prayer begins with one or more Sentences of Scripture. The Minister reads one or more opening sentences suitable to season or occasion; the Sentences may be taken from those appointed in the Office. Then, if directed, the Exhortation, Confession, and Absolution follow."
+      "text1928": "The Minister shall begin Morning Prayer by reading one or more of the Sentences of Scripture appointed in the Office. Then shall be said that which follows, the people devoutly kneeling. The Exhortation may be omitted, or said in part, at the discretion of the Minister."
     },
     {
       "id": "opening-sentences",
@@ -45,7 +45,7 @@
       "id": "opening-versicles-rubric",
       "label": "Opening Versicles and Lord’s Prayer Rubrics",
       "text1662": "Here all standing up, the Minister shall say the opening versicles and Gloria Patri; then all kneeling say the Lord’s Prayer.",
-      "text1928": "After the Confession and Absolution (or when omitted by rubric), the Minister says the opening versicles with the People: O Lord, open thou our lips / And our mouth shall show forth thy praise; Gloria Patri; Praise ye the Lord. The Lord's Name be praised. Then the appointed invitatory is said or sung. The Lord's Prayer is said in the Office as appointed in the American form."
+      "text1928": "Then the Minister shall say, O Lord, open thou our lips. Answer. And our mouth shall show forth thy praise. Here, all standing up, the Minister shall say, Glory be to the Father, and to the Son, and to the Holy Ghost; Answer. As it was in the beginning, is now, and will be for ever. Amen. Then shall be said or sung, Praise ye the Lord. Answer. The Lord's Name be praised. Then shall follow the Invitatory Psalm, Venite, or another appointed Invitatory."
     },
     {
       "id": "opening-versicles-and-lords-prayer",
@@ -63,7 +63,7 @@
       "id": "psalter-lessons-rubrics",
       "label": "Psalter and Lessons Rubrics",
       "text1662": "Then shall follow the Psalms in order as they are appointed. At the end of every Psalm and appointed canticle the Gloria Patri is repeated. Then shall be read the First Lesson from the Old Testament, followed by the appointed canticle; then the Second Lesson from the New Testament.",
-      "text1928": "Then follows a portion of the Psalter as appointed. After the Psalms, the First Lesson is read from the Old Testament. After the First Lesson, one appointed canticle is said or sung (such as Te Deum laudamus, Benedicite, or another from the table). Then the Second Lesson is read from the New Testament, followed by an appointed canticle (such as Benedictus, Jubilate Deo, or another from the table). The 1928 rubrics provide seasonal alternatives and substitutions."
+      "text1928": "Then shall follow a portion of the Psalter, as appointed. Then shall be read the First Lesson, according to the Table or Lectionary. After the First Lesson, one of the appointed Canticles shall be said or sung. Then shall be read the Second Lesson. After the Second Lesson, one of the appointed Canticles shall be said or sung. In place of the Canticles here appointed, others may be used according to the Table of Canticles."
     },
     {
       "id": "canticles-after-lessons",
@@ -81,7 +81,7 @@
       "id": "suffrages-rubrics",
       "label": "Suffrages and Collects Rubrics",
       "text1662": "The Lord be with you. Answer. And with thy spirit. Minister. Let us pray. Lord, have mercy upon us. Christ, have mercy upon us. Lord, have mercy upon us. Then the Lord’s Prayer. Then follow the Suffrages and three Collects: the Collect of the Day, Collect for Peace, and Collect for Grace.",
-      "text1928": "After the Apostles' Creed, the versicle and response are said, and the Office proceeds to Kyrie and the Lord's Prayer. Then follow the Suffrages in the American form (including prayers for the Nation), followed by the Collect of the Day, the Collect for Peace, and the Collect for Grace."
+      "text1928": "After the Apostles' Creed, the Minister shall say, The Lord be with you. Answer. And with thy spirit. Minister. Let us pray. Then shall be said the Kyrie and the Lord's Prayer. After which, these Suffrages are said; and then the Collect of the Day, the Collect for Peace, and the Collect for Grace."
     },
     {
       "id": "suffrages-and-collects-text",
@@ -93,7 +93,7 @@
       "id": "additional-prayers-rubrics",
       "label": "Additional Prayers and Thanksgivings Rubrics",
       "text1662": "In Quires and Places where they sing, here followeth the Anthem. Then appointed prayers are read (with reduced set when the Litany is read).",
-      "text1928": "In places where they sing, an Anthem may follow. Then are said such prayers and thanksgivings as are appointed: for the President of the United States and all in civil authority, for the Clergy and People, for all sorts and conditions of men, General Thanksgiving, Prayer of St. Chrysostom, and other authorized prayers as needed."
+      "text1928": "In Quires and Places where they sing, here followeth the Anthem. Then these Prayers and Thanksgivings may be said: for the President of the United States and all in Civil Authority; for the Clergy and People; for all sorts and conditions of men; and such other prayers as are authorized. The General Thanksgiving and Prayer of Saint Chrysostom may be used."
     },
     {
       "id": "additional-prayers-text",
@@ -105,7 +105,7 @@
       "id": "closing-rubric",
       "label": "Closing Rubric",
       "text1662": "Then shall be said here, or at the end of all the prayers, the Grace.",
-      "text1928": "A Prayer of St. Chrysostom may be said, and the Office concludes with the Grace from 2 Corinthians 13:14."
+      "text1928": "The Prayer of Saint Chrysostom may be said. Then shall be said: The grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. Amen."
     },
     {
       "id": "closing-grace",
