@@ -24,7 +24,7 @@ The texts are normalized into these logical units:
 16. Closing Rubric
 17. Closing Grace Text
 
-The canonical comparison data is stored in `data/morning_prayer.json`, now populated with full text in each comparison unit rather than abbreviated excerpts.
+The canonical comparison data is stored in `data/morning_prayer.json`, with rubric units separated from prayer-text units and expanded 1928 Morning Prayer content/rubrics for fuller coverage.
 
 ## Run locally
 
