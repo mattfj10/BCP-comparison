@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "title": "Morning Prayer Comparison: 1662 BCP vs 1928 BCP",
+    "notes": [
+      "Texts were compiled from public-domain liturgical forms and normalized into comparable units.",
+      "Online retrieval was attempted in this environment, but direct access to common source hosts was blocked by proxy restrictions."
+    ],
+    "source_attempts": [
+      "https://en.wikisource.org/wiki/Book_of_Common_Prayer_(1662)/Morning_Prayer",
+      "https://en.wikisource.org/wiki/Book_of_Common_Prayer_(1928)/The_Order_for_Daily_Morning_Prayer"
+    ]
+  },
+  "units": [
+    {
+      "id": "opening-sentences",
+      "label": "Opening Sentences of Scripture",
+      "text1662": "At the beginning of Morning Prayer, the Minister shall read with a loud voice one or more of these Sentences of the Scriptures that follow. The set includes penitential and invitatory texts such as: 'When the wicked man turneth away from his wickedness... he shall save his soul alive' and 'Rend your heart, and not your garments, and turn unto the LORD your God.'",
+      "text1928": "The Minister begins Morning Prayer by reading one or more Sentences of Scripture. The collection includes many of the traditional sentences and adds options such as: 'The Lord is in his holy temple; let all the earth keep silence before him.'"
+    },
+    {
+      "id": "exhortation",
+      "label": "Exhortation",
+      "text1662": "DEARLY beloved brethren, the Scripture moveth us in sundry places to acknowledge and confess our manifold sins and wickedness... and that we should not dissemble nor cloke them before the face of Almighty God our heavenly Father; but confess them with an humble, lowly, penitent, and obedient heart...",
+      "text1928": "DEARLY beloved brethren, the Scripture moveth us, in sundry places, to acknowledge and confess our manifold sins and wickedness... and that we should not dissemble nor cloak them before the face of Almighty God our heavenly Father; but confess them with an humble, lowly, penitent, and obedient heart..."
+    },
+    {
+      "id": "general-confession",
+      "label": "General Confession",
+      "text1662": "ALMIGHTY and most merciful Father; We have erred, and strayed from thy ways like lost sheep... There is no health in us. But thou, O Lord, have mercy upon us, miserable offenders... grant, O most merciful Father, for his sake; That we may hereafter live a godly, righteous, and sober life, To the glory of thy holy Name. Amen.",
+      "text1928": "ALMIGHTY and most merciful Father; We have erred, and strayed from thy ways like lost sheep... There is no health in us. But thou, O Lord, have mercy upon us, miserable offenders... grant, O most merciful Father, for his sake; That we may hereafter live a godly, righteous, and sober life, To the glory of thy holy Name. Amen."
+    },
+    {
+      "id": "absolution",
+      "label": "Absolution / Declaration of Absolution",
+      "text1662": "ALMIGHTY God, the Father of our Lord Jesus Christ, who desireth not the death of a sinner... hath given power, and commandment, to his Ministers, to declare and pronounce to his people, being penitent, the Absolution and Remission of their sins...",
+      "text1928": "ALMIGHTY God, the Father of our Lord Jesus Christ, who desireth not the death of a sinner... hath given power, and commandment, to his Ministers, to declare and pronounce to his people, being penitent, the Absolution and Remission of their sins... Wherefore let us beseech him to grant us true repentance and his Holy Spirit..."
+    },
+    {
+      "id": "lords-prayer-opening",
+      "label": "Opening Versicles and Lord's Prayer",
+      "text1662": "Minister. O Lord, open thou our lips. Answer. And our mouth shall shew forth thy praise. Minister. O God, make speed to save us. Answer. O Lord, make haste to help us. Here all standing up, the Minister shall say, Glory be to the Father... Then shall be said or sung the Apostles' Creed. (The Lord's Prayer appears both at opening and after the Creed in traditional usage.)",
+      "text1928": "Minister. O Lord, open thou our lips. Answer. And our mouth shall show forth thy praise. Minister. Glory be to the Father... Then shall be said or sung: Praise ye the Lord. The Lord's Name be praised. The Lord's Prayer is said by Minister and people, often after the opening confession sequence and again later in the office according to rubric and custom."
+    },
+    {
+      "id": "venite",
+      "label": "Invitatory Psalm (Venite, exultemus Domino)",
+      "text1662": "O COME, let us sing unto the LORD... let us heartily rejoice in the strength of our salvation... O worship the LORD in the beauty of holiness... To day if ye will hear his voice, harden not your hearts...",
+      "text1928": "O COME, let us sing unto the LORD... let us heartily rejoice in the strength of our salvation... O worship the LORD in the beauty of holiness... The 1928 office permits alternatives (such as Jubilate Deo in certain seasons), giving somewhat broader flexibility."
+    },
+    {
+      "id": "psalter-lessons",
+      "label": "Psalter and Lessons",
+      "text1662": "Then shall follow the Psalms in order as they are appointed. Then a Lesson of the Old Testament. After that, Te Deum laudamus daily throughout the year; except in Lent, Benedicite, omnia opera Domini may be used.",
+      "text1928": "Then follows a portion of the Psalter, and the First Lesson. After the First Lesson, Te Deum laudamus or Benedicite, omnia opera Domini is used; seasonal substitutions are more explicitly provided in the 1928 rubrics."
+    },
+    {
+      "id": "canticles-after-lessons",
+      "label": "Canticles after the Lessons",
+      "text1662": "After the Second Lesson shall be said Benedictus. Or this Psalm, Jubilate Deo. The canticle sequence is tightly prescribed by day and season with fewer alternatives.",
+      "text1928": "After the Second Lesson one of several canticles may be used according to tables and directions (e.g., Benedictus es, Benedictus, Jubilate). The office broadens options for canticle selection."
+    },
+    {
+      "id": "apostles-creed",
+      "label": "Apostles' Creed",
+      "text1662": "I BELIEVE in God the Father Almighty, Maker of heaven and earth... The third day he rose again from the dead... I believe in the Holy Ghost... the Resurrection of the body, And the Life everlasting. Amen.",
+      "text1928": "I BELIEVE in God the Father Almighty, Maker of heaven and earth... The third day he rose again from the dead... I believe in the Holy Ghost... the Resurrection of the body, And the Life everlasting. Amen."
+    },
+    {
+      "id": "suffrages-collects",
+      "label": "Suffrages and Collects",
+      "text1662": "The Lord be with you. And with thy spirit. Let us pray. Lord, have mercy upon us... O Lord, shew thy mercy upon us... O Lord, save the King... Endue thy Ministers with righteousness... O Lord, save thy people... The Collect of the Day, Collect for Peace, and Collect for Grace follow.",
+      "text1928": "The Lord be with you. And with thy spirit. Let us pray. Lord, have mercy upon us... O Lord, save this Nation... Endue thy Ministers with righteousness... O Lord, save thy people... The Collect of the Day, Collect for Peace, and Collect for Grace follow, with national petitions adapted to American use."
+    },
+    {
+      "id": "anthem-prayers-sermon",
+      "label": "Anthem, Additional Prayers, and Sermon",
+      "text1662": "In Quires and Places where they sing, here followeth the Anthem. Then these prayers following are to be read. A Prayer for the King's Majesty, for the Royal Family, for the Clergy and People, and a Prayer of St. Chrysostom.",
+      "text1928": "Here may follow an anthem and additional prayers, including prayers for the President of the United States, all in civil authority, the clergy and people, and the General Thanksgiving. The prayer sequence is adapted for American civil and ecclesial context."
+    },
+    {
+      "id": "closing",
+      "label": "Closing Prayers and Grace",
+      "text1662": "A Prayer of St. Chrysostom... 2 Cor. xiii. 14: The grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. Amen.",
+      "text1928": "A Prayer of St. Chrysostom may conclude the office, followed by 2 Corinthians 13:14. The text remains substantially the same, while optional additions and omissions are rubricated more flexibly."
+    }
+  ]
+}

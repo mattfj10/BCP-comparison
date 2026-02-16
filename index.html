@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1662 vs 1928 Morning Prayer Comparison</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23111827'/%3E%3Ctext x='32' y='40' font-size='28' text-anchor='middle' fill='white'%3E%2B%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <p class="eyebrow">Prayer Office Textual Analysis</p>
+      <h1>Morning Prayer — 1662 BCP vs 1928 BCP</h1>
+      <p class="subtitle">Aligned by liturgical unit and rendered side-by-side with visual differences.</p>
+    </header>
+
+    <main>
+      <section class="panel" id="meta"></section>
+
+      <section class="toolbar panel">
+        <div class="toggle-wrap">
+          <label class="switch">
+            <input type="checkbox" id="toggleDiff" checked />
+            <span>Show word-level differences</span>
+          </label>
+        </div>
+        <div class="legend">
+          <span><em class="chip added"></em> 1928 addition</span>
+          <span><em class="chip removed"></em> 1662-only wording</span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Comparison Structure</h2>
+        <ol id="unitList" class="unit-list"></ol>
+      </section>
+
+      <section>
+        <h2 class="section-title">Side-by-Side Office Comparison</h2>
+        <div id="comparisonGrid" class="comparison-grid"></div>
+      </section>
+    </main>
+
+    <template id="unitCardTemplate">
+      <article class="unit-card">
+        <header class="unit-head">
+          <h3></h3>
+          <p class="unit-id"></p>
+        </header>
+        <div class="columns">
+          <div class="column left">
+            <h4>1662 BCP</h4>
+            <p class="text1662"></p>
+          </div>
+          <div class="column right">
+            <h4>1928 BCP</h4>
+            <p class="text1928"></p>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
