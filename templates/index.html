@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1662 vs 1928 Morning Prayer Comparison</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23111827'/%3E%3Ctext x='32' y='40' font-size='28' text-anchor='middle' fill='white'%3E%2B%3C/text%3E%3C/svg%3E" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/static/style.css" />
   </head>
   <body>
     <header class="hero">
@@ -27,6 +27,25 @@
         <div class="legend">
           <span><em class="chip added"></em> 1928 addition</span>
           <span><em class="chip removed"></em> 1662-only wording</span>
+        </div>
+      </section>
+
+      <section class="panel settings-panel">
+        <h2>View Settings</h2>
+        <div class="settings-grid">
+          <label>
+            Search units
+            <input type="search" id="searchUnits" placeholder="Filter by label, id, or text" />
+          </label>
+          <label>
+            Base font size
+            <input type="range" id="fontSize" min="15" max="21" step="1" value="17" />
+          </label>
+          <label class="switch compact-toggle">
+            <input type="checkbox" id="compactMode" />
+            <span>Compact card spacing</span>
+          </label>
+          <p class="small" id="resultsCount" aria-live="polite"></p>
         </div>
       </section>
 
@@ -60,6 +79,6 @@
       </article>
     </template>
 
-    <script src="app.js" type="module"></script>
+    <script src="/static/app.js" type="module"></script>
   </body>
 </html>

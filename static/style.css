@@ -1,4 +1,5 @@
 :root {
+  --base-font-size: 17px;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   color: #111827;
   background: #f3f4f6;
@@ -11,6 +12,7 @@
 
 body {
   margin: 0;
+  font-size: var(--base-font-size);
 }
 
 .hero {
@@ -50,6 +52,12 @@ main {
   border-radius: 12px;
   padding: 1rem;
   margin-bottom: 1rem;
+}
+
+body.compact .panel,
+body.compact .unit-card {
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .toolbar {
@@ -92,6 +100,32 @@ main {
   border-bottom: 2px solid #dc2626;
 }
 
+.settings-panel h2 {
+  margin: 0 0 0.6rem;
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+  align-items: end;
+}
+
+.settings-grid label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.settings-grid input[type="search"],
+.settings-grid input[type="range"] {
+  width: 100%;
+}
+
+.compact-toggle {
+  align-self: center;
+}
+
 .unit-list {
   margin: 0;
   padding-left: 1.25rem;
@@ -104,6 +138,10 @@ main {
 .comparison-grid {
   display: grid;
   gap: 1rem;
+}
+
+body.compact .comparison-grid {
+  gap: 0.75rem;
 }
 
 .unit-head {
@@ -132,10 +170,19 @@ main {
   margin-top: 0.8rem;
 }
 
+body.compact .columns {
+  gap: 0.65rem;
+  margin-top: 0.55rem;
+}
+
 .column {
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   padding: 0.8rem;
+}
+
+body.compact .column {
+  padding: 0.6rem;
 }
 
 .column.left {
