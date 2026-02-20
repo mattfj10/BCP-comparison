@@ -52,6 +52,26 @@ python3 app.py
 
 Open <http://localhost:8000>.
 
+## Run with Nix flake
+
+If you use Nix with flakes enabled, you can run the app without manual environment setup:
+
+```bash
+nix run .#server
+```
+
+Or enter a development shell with Python available:
+
+```bash
+nix develop
+```
+
+Then run:
+
+```bash
+python3 app.py
+```
+
 ## UI behavior
 
 - The app displays each unit in a dedicated card with **1662** on the left and **1928** on the right.
