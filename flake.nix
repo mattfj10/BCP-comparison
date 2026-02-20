@@ -11,6 +11,14 @@
       let
         pkgs = import nixpkgs { inherit system; };
         python = pkgs.python3;
+        runServer = {
+          type = "app";
+          program = "${pkgs.writeShellScript "run-bcp-server" ''
+            set -euo pipefail
+            cd "${self}"
+            exec ${python}/bin/python3 app.py
+          ''}";
+        };
       in
       {
         devShells.default = pkgs.mkShell {
@@ -21,15 +29,7 @@
           '';
         };
 
-        apps.default = {
-          type = "app";
-          program = pkgs.writeShellScript "run-bcp-server" ''
-            set -euo pipefail
-            cd "${self}"
-            exec ${python}/bin/python3 app.py
-          '';
-        };
-
-        apps.server = self.outputs.apps.${system}.default;
+        apps.default = runServer;
+        apps.server = runServer;
       });
 }
