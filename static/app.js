@@ -3,15 +3,52 @@ const unitList = document.getElementById("unitList");
 const comparisonGrid = document.getElementById("comparisonGrid");
 const template = document.getElementById("unitCardTemplate");
 const toggleDiff = document.getElementById("toggleDiff");
+const searchUnits = document.getElementById("searchUnits");
+const fontSize = document.getElementById("fontSize");
+const compactMode = document.getElementById("compactMode");
+const resultsCount = document.getElementById("resultsCount");
 
+const SETTINGS_KEY = "bcpComparerSettings";
+
+const settings = {
+  search: "",
+  fontSize: 17,
+  compactMode: false,
+  showDiff: true,
+  ...loadSettings()
+};
+
+applySettings();
 const data = await loadData();
 render(data);
 
-toggleDiff.addEventListener("change", () => rerenderCards(data));
+searchUnits.addEventListener("input", () => {
+  settings.search = searchUnits.value.trim();
+  saveSettings();
+  rerenderCards(data);
+});
+
+toggleDiff.addEventListener("change", () => {
+  settings.showDiff = toggleDiff.checked;
+  saveSettings();
+  rerenderCards(data);
+});
+
+fontSize.addEventListener("input", () => {
+  settings.fontSize = Number(fontSize.value);
+  applySettings();
+  saveSettings();
+});
+
+compactMode.addEventListener("change", () => {
+  settings.compactMode = compactMode.checked;
+  applySettings();
+  saveSettings();
+});
 
 async function loadData() {
   try {
-    const response = await fetch("./data/morning_prayer.json", { cache: "no-store" });
+    const response = await fetch("/api/morning-prayer", { cache: "no-store" });
     if (!response.ok) {
       throw new Error(`Failed to load comparison data: ${response.status}`);
     }
@@ -33,6 +70,7 @@ function render(dataset) {
 
   dataset.units.forEach((unit, index) => {
     const item = document.createElement("li");
+    item.dataset.unitId = unit.id;
     item.innerHTML = `<strong>${escapeHtml(unit.label)}</strong> <code>${escapeHtml(unit.id)}</code>`;
     unitList.appendChild(item);
 
@@ -49,14 +87,26 @@ function render(dataset) {
 }
 
 function rerenderCards(dataset) {
+  const query = settings.search.toLowerCase();
+  let visibleCount = 0;
+
   document.querySelectorAll(".unit-card").forEach((card) => {
     const unit = dataset.units.find((entry) => entry.id === card.dataset.unitId);
     if (!unit) return;
 
+    const matches = matchesQuery(unit, query);
+    card.hidden = !matches;
+
+    const listItem = unitList.querySelector(`[data-unit-id="${card.dataset.unitId}"]`);
+    if (listItem) listItem.hidden = !matches;
+
+    if (!matches) return;
+    visibleCount++;
+
     const left = card.querySelector(".text1662");
     const right = card.querySelector(".text1928");
 
-    if (toggleDiff.checked) {
+    if (settings.showDiff) {
       left.innerHTML = renderDiff(unit.text1662, unit.text1928, "left");
       right.innerHTML = renderDiff(unit.text1662, unit.text1928, "right");
       return;
@@ -65,6 +115,38 @@ function rerenderCards(dataset) {
     left.textContent = unit.text1662;
     right.textContent = unit.text1928;
   });
+
+  resultsCount.textContent = `${visibleCount} of ${dataset.units.length} units shown`;
+}
+
+function matchesQuery(unit, query) {
+  if (!query) return true;
+  const haystack = `${unit.id} ${unit.label} ${unit.text1662} ${unit.text1928}`.toLowerCase();
+  return haystack.includes(query);
+}
+
+function applySettings() {
+  document.documentElement.style.setProperty("--base-font-size", `${settings.fontSize}px`);
+  document.body.classList.toggle("compact", Boolean(settings.compactMode));
+
+  searchUnits.value = settings.search;
+  toggleDiff.checked = Boolean(settings.showDiff);
+  fontSize.value = String(settings.fontSize);
+  compactMode.checked = Boolean(settings.compactMode);
+}
+
+function loadSettings() {
+  try {
+    const raw = localStorage.getItem(SETTINGS_KEY);
+    if (!raw) return {};
+    return JSON.parse(raw);
+  } catch {
+    return {};
+  }
+}
+
+function saveSettings() {
+  localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
 }
 
 function renderDiff(text1662, text1928, side) {

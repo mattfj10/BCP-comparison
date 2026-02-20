@@ -1,6 +1,26 @@
 # BCP Morning Prayer Comparator
 
-This project compares the **Morning Prayer office** of the **1662 Book of Common Prayer** and the **1928 Book of Common Prayer** in a side-by-side web interface.
+This project is a minimal web app that compares the **Morning Prayer office** of the **1662 Book of Common Prayer** and the **1928 Book of Common Prayer** in a side-by-side interface.
+
+## Stack
+
+- **Web server:** Python app server (`app.py`) with routed endpoints
+- **UI:** HTML template + static CSS/JavaScript
+- **Data source:** local JSON file at `data/morning_prayer.json`
+- **User preferences:** browser `localStorage`
+
+## Project layout
+
+- `app.py` — web server and routes
+- `templates/index.html` — main page template
+- `static/style.css` — UI styles
+- `static/app.js` — browser logic (rendering, settings, diff)
+- `data/morning_prayer.json` — canonical comparison data
+
+## API routes
+
+- `GET /` — main UI
+- `GET /api/morning-prayer` — returns full comparison dataset as JSON
 
 ## How the office is structured for comparison
 
@@ -24,22 +44,23 @@ The texts are normalized into these logical units:
 16. Closing Rubric
 17. Closing Grace Text
 
-The canonical comparison data is stored in `data/morning_prayer.json`, with rubric units separated from prayer-text units and expanded 1928 Morning Prayer content/rubrics for fuller coverage.
-
 ## Run locally
 
 ```bash
-python3 -m http.server 8000
+python3 app.py
 ```
 
 Open <http://localhost:8000>.
 
 ## UI behavior
 
-- Main comparison page is at `/`.
 - The app displays each unit in a dedicated card with **1662** on the left and **1928** on the right.
 - A diff toggle enables/disables word-level highlights.
-- A built-in data-URI favicon avoids noisy `/favicon.ico` 404 errors in simple static servers.
+- View settings include:
+  - unit search/filter,
+  - base font size,
+  - compact spacing mode.
+- View settings persist in the local browser using `localStorage`.
 
 ## Notes on source retrieval
 
